@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #e0e0e0;
+    background-color: #121212;
+}
+
+header {
+    background-color: #1f1f1f;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+.hero {
+    background-color: #252525;
+    text-align: center;
+    padding: 2rem;
+}
+
+.image-filters {
+    display: flex;
+    padding: 2rem;
+}
+
+.filters {
+    flex: 1;
+    padding-right: 2rem;
+}
+
+.filters h3 {
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.filters ul {
+    list-style-type: none;
+}
+
+#imageUpload {
+    margin-bottom: 1rem;
+    background-color: #3a3a3a;
+    color: #fff;
+    padding: 0.5rem;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.filter-btn {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    background-color: #3a3a3a;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.filter-btn:hover {
+    background-color: #4a4a4a;
+}
+
+.image-display {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#displayedImage {
+    max-width: 100%;
+    max-height: 400px;
+    object-fit: contain;
+    margin-bottom: 1rem;
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+}
+
+.current-filter {
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+}
+
+footer {
+    background-color: #1f1f1f;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

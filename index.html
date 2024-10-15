@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Upload and Filter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Image Upload and Filter</h1>
+    </header>
+
+    <section class="hero">
+        <h2>Upload and Apply Filters</h2>
+    </section>
+
+    <main class="image-filters">
+        <section class="filters">
+            <h3>Filters</h3>
+            <input type="file" id="imageUpload" accept="image/*">
+            <ul>
+                <li><button class="filter-btn" data-filter="none">None</button></li>
+                <li><button class="filter-btn" data-filter="grayscale">Grayscale</button></li>
+                <li><button class="filter-btn" data-filter="sepia">Sepia</button></li>
+                <li><button class="filter-btn" data-filter="invert">Invert</button></li>
+                <li><button class="filter-btn" data-filter="blur">Blur</button></li>
+                <li><button class="filter-btn" data-filter="brightness">Brightness</button></li>
+                <li><button class="filter-btn" data-filter="contrast">Contrast</button></li>
+            </ul>
+        </section>
+        <section class="image-display">
+            <img id="displayedImage" src="" alt="Uploaded image">
+            <p class="current-filter">Current Filter: None</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Thank you for using our Image Upload and Filter!</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
